@@ -1,0 +1,56 @@
+{
+  "mappingId": "catalog-import",
+  "title": "Catalog column mapping",
+  "columns": [
+    {
+      "id": "caption",
+      "label": "Product display name"
+    },
+    {
+      "id": "live",
+      "label": "Currently available"
+    },
+    {
+      "id": "qty",
+      "label": "Units in catalog"
+    },
+    {
+      "id": "notes",
+      "label": "Internal note"
+    }
+  ],
+  "rows": [
+    {
+      "caption": "Paper clips",
+      "live": true,
+      "qty": 24,
+      "notes": null
+    },
+    {
+      "caption": "Label rolls",
+      "live": false,
+      "qty": 0,
+      "notes": ""
+    }
+  ],
+  "targets": [
+    {
+      "id": "active",
+      "label": "Available",
+      "type": "boolean",
+      "nullable": false
+    },
+    {
+      "id": "name",
+      "label": "Product name",
+      "type": "string",
+      "nullable": false
+    },
+    {
+      "id": "quantity",
+      "label": "Unit count",
+      "type": "integer",
+      "nullable": false
+    }
+  ]
+}
